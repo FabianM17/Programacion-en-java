@@ -30,6 +30,10 @@ public class Practica {
             System.out.println(sucecion[i]);
         }
     }
+    
+    public static void ejercicio2(){
+    
+    }
    
     
 }
