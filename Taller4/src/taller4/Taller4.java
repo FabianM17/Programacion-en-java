@@ -85,9 +85,7 @@ public class Taller4 {
                     if (pos == -1) {
                         JOptionPane.showMessageDialog(null, "Estudiante no encontrado.");
                     } else {
-                        JOptionPane.showMessageDialog(null,
-                                "Nombre: " + datos[pos][0] +
-                                "\nTelefono: " + datos[pos][1]);
+                        JOptionPane.showMessageDialog(null,"Nombre: " + datos[pos][0] +"\nTelefono: " + datos[pos][1]);
                     }
                     break;
                 case 2:
