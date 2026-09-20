@@ -216,17 +216,15 @@ public class Practica1 {
     }
     
     public static void verMejores(String[] estudiantes, Double[] notas, double promedio){
-        boolean ejecucion=false;
+        int cantidad=0;
         System.out.println("Lista de los estudiantes con notas por encima del promedio:");
         for (int i = 0; i < estudiantes.length; i++) {
             if (notas[i] > promedio ) {
                 System.out.println("Estudiante: " + estudiantes[i] + ", nota: " + notas[i] + ".");
-                ejecucion=true;
+                cantidad++;
             }
         }
-        if (ejecucion==false){
-            System.out.println("No hay estudiantes cuyas notas esten por encima del promedio. ");
-        }
+        System.out.println("La cantidad de estudiantes por encima del promedio es: "+cantidad);
     }
     
     /* no entendi muy bien que queria decir la orden de la funcion aplicarBonificacion ya que se podria interpretar como que habia que sumar un 1% 
