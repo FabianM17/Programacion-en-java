@@ -45,7 +45,6 @@ public class Mascota {
             System.out.println("Limpieza: -" + (a - limpieza) + ", felicidad: -" + (b - felicidad) + ", salud: -" + (c - salud) + ".");
 
             acciones = 0;
-            penalizaciones();
             System.out.println("Se finalizo el dia: " + dia + ". Acciones realizadas: " + acciones + ".");
             estadisticas();
             dia++;
@@ -204,7 +203,7 @@ public class Mascota {
             setLimpieza(limpieza - (random.nextInt(21) + 10));
             int d = felicidad;
             setFelicidad(felicidad - (random.nextInt(21) + 10));
-            System.out.println("Dinero: +" + (dinero - a) + ", energia: -" + (b - energia) + ", limpieza: -" + (c - limpieza) + ", felicidad: -" + (c - felicidad));
+            System.out.println("Dinero: +" + (dinero - a) + ", energia: -" + (b - energia) + ", limpieza: -" + (c - limpieza) + ", felicidad: -" + (d - felicidad));
             penalizaciones();
             acciones(1);
             System.out.println("Acciones realizadas: " + acciones + ".");
@@ -270,7 +269,7 @@ public class Mascota {
         } else if (felicidad < 0) {
             this.felicidad = 0;
         } else {
-            this.felicidad = energia;
+            this.felicidad = felicidad;
         }
     }
 
